@@ -1,0 +1,16 @@
+{
+	"name": "task-cli",
+	"version": "1.0.0",
+	"main": "bin/index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "node ."
+	},
+	"bin": {
+		"task": "./bin/index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": ""
+}
