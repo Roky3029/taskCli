@@ -20,7 +20,7 @@ export const addTask = text => {
 		{
 			id: newTaskId,
 			description: text,
-			status: 'in-progress',
+			status: 'todo',
 			createdAt: formatDate(),
 			updatedAt: formatDate()
 		}
