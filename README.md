@@ -43,6 +43,20 @@ Full command: `task <action> <id | text | status>`
 - Finally, if the action is `list`, this can be used as `task list` which will display all tasks created, but it can also be given one of the three task status to filter and display just the tasks with that status (`done`, `todo` or `in-progress`). <br>
   Example: `task list todo`
 
+<br><br>
+
+Each task has the following structure:
+
+```js
+{
+  id: "Unique identifier for the task" <number>,
+  description: "The task's text" <string>,
+  status: "The task's status" <'done' | 'todo' | 'in-progress'>,
+  createdAt: "The date when the task was initially created" <Date>,
+  updatedAt: "The last time the task was updated" <Date>
+}
+```
+
 ### About the programmer
 
 Hi, I'm Miguel and I love coding things and learning new skills. If you want to reach me, you can check out my social networks:

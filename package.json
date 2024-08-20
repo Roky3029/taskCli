@@ -1,16 +1,19 @@
 {
 	"name": "task-cli",
 	"version": "1.0.0",
-	"main": "bin/index.js",
+	"main": "index.js",
 	"type": "module",
 	"scripts": {
 		"dev": "node ."
 	},
 	"bin": {
-		"task": "./bin/index.js"
+		"task": "./index.js"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"description": ""
+	"description": "",
+	"dependencies": {
+		"colors": "^1.4.0"
+	}
 }
