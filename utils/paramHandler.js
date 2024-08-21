@@ -1,12 +1,12 @@
 import colors from 'colors'
 
-import { addTask } from './actions/addTask.js'
-import { deleteTask } from './actions/deleteTask.js'
-import { listTasks } from './actions/listTasks.js'
-import { markDone } from './actions/markDone.js'
-import { markInProgress } from './actions/markInProgress.js'
-import { updateTask } from './actions/updateTask.js'
-import { showHelp } from './actions/showHelp.js'
+import { addTask } from '../actions/addTask.js'
+import { deleteTask } from '../actions/deleteTask.js'
+import { listTasks } from '../actions/listTasks.js'
+import { markDone } from '../actions/markDone.js'
+import { markInProgress } from '../actions/markInProgress.js'
+import { updateTask } from '../actions/updateTask.js'
+import { showHelp } from '../actions/showHelp.js'
 
 export const paramHandler = param => {
 	const options = {
