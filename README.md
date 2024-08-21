@@ -18,6 +18,19 @@ and as you can see inside the `package.json`, once you are inside the folder, ju
 
 - This will install globally on your computer the CLI and to execute it once it has finished, just use the command `task` followed by the arguments required.
 
+<br>
+
+> [!IMPORTANT]
+> Before installing globally the package, if you wish to modify the command, you can do so by going to the `package.json` file and modifying the following section:
+>
+> ```js
+> "bin": {
+>   "task": "./index.js"
+> },
+> ```
+>
+> By changing the `"task"` key you will be able to use your desired command
+
 ### Usage
 
 Full command: `task <action> <id | text | status>`
@@ -42,6 +55,11 @@ Full command: `task <action> <id | text | status>`
 
 - Finally, if the action is `list`, this can be used as `task list` which will display all tasks created, but it can also be given one of the three task status to filter and display just the tasks with that status (`done`, `todo` or `in-progress`). <br>
   Example: `task list todo`
+
+<br>
+
+> [!CAUTION]
+> If you attempt to modify the `tasks.json` and you happen to break it and make it unmodifiable by the program, you must delete the file and start again, this will create a new error-free file
 
 <br><br>
 
