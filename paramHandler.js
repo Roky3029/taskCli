@@ -16,7 +16,7 @@ export const paramHandler = param => {
 		'mark-in-progress': markInProgress,
 		'mark-done': markDone,
 		list: listTasks,
-		'-h': showHelp
+		help: showHelp
 	}
 
 	if (!options[param]) {
@@ -25,5 +25,9 @@ export const paramHandler = param => {
 		)
 		process.exit(1)
 	}
+
+	if (param === 'update')
+		return options[param](process.argv[3], process.argv[4])
+
 	return options[param](process.argv[3])
 }
