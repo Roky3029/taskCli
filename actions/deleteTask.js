@@ -12,6 +12,8 @@ export const deleteTask = id => {
 
 	const newData = data.filter(task => task.id !== +id)
 
+	console.log(newData)
+
 	writeJsonToFile(newData)
 
 	console.log(colors.yellow('The task has been deleted'))
