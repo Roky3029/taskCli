@@ -2,7 +2,7 @@
 
 This is a project from the [roadmap.sh](https://roadmap.sh/projects/task-tracker) web page. It is made using their instructions and requirements.
 
-I've implemented the solution using NodeJS and it's only dependency is `colors`, letting the rest of the functionalities using native NodeJS tools
+I've implemented the solution using NodeJS and it's only dependency is `colors` and `prompt-sync`, coding all the rest of functions with native NodeJS tools
 
 ### Set up
 
