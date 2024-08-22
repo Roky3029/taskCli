@@ -7,6 +7,8 @@ import { markDone } from '../actions/markDone.js'
 import { markInProgress } from '../actions/markInProgress.js'
 import { updateTask } from '../actions/updateTask.js'
 import { showHelp } from '../actions/showHelp.js'
+import { resetFile } from '../actions/resetFile.js'
+import { idReassign } from '../actions/idReassign.js'
 
 export const paramHandler = param => {
 	const options = {
@@ -16,7 +18,9 @@ export const paramHandler = param => {
 		'mark-in-progress': markInProgress,
 		'mark-done': markDone,
 		list: listTasks,
-		help: showHelp
+		help: showHelp,
+		reset: resetFile,
+		reassign: idReassign
 	}
 
 	if (!options[param]) {
