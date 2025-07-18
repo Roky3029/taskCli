@@ -25,7 +25,9 @@ export const paramHandler = param => {
 
 	if (!options[param]) {
 		console.log(
-			`Invalid parameter\nUse ${colors.bgWhite.black('task -h')} for more info.`
+			`Invalid parameter\nUse ${colors.bgWhite.black(
+				'task help'
+			)} for more info.`
 		)
 		process.exit(1)
 	}
